@@ -1,0 +1,8 @@
+13:30:18.085 [main] INFO  testCases.AccountRegistrationTest - clicked myaccount option
+13:30:18.339 [main] INFO  testCases.AccountRegistrationTest - clicked Registration option
+13:30:18.626 [main] INFO  testCases.AccountRegistrationTest - Entered User details
+13:30:20.134 [main] INFO  testCases.AccountRegistrationTest - Account created
+13:30:20.134 [main] INFO  testCases.AccountRegistrationTest - This is ending point
+13:30:22.111 [main] INFO  testCases.LoginTest - ****This is Starting Point****
+13:30:23.165 [main] INFO  testCases.LoginTest - **Login Done**
+13:30:23.194 [main] INFO  testCases.LoginTest - ****This is Ending  Point****

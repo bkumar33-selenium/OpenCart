@@ -1,0 +1,63 @@
+package testCases;
+
+
+import org.testng.Assert;
+
+import org.testng.annotations.Test;
+
+import pageObjects.HomePage;
+import pageObjects.RegistrationPage;
+import testBase.BaseClass;
+
+public class AccountRegistrationTest extends BaseClass {
+	
+	@Test(groups= {"Regression","Master"})
+	void AccountRegister() 
+	{
+		logger.info("****Registration Test Started****");
+		try
+		{
+		
+		HomePage hp=new HomePage(driver);
+		
+		hp.MyAccount();
+		logger.info("Clicked MyAccount Dropdown");
+		hp.Registration();
+		logger.info("Clicked Registration link");
+		RegistrationPage rp=new RegistrationPage(driver);
+		logger.info("Providing Customer Details");
+		rp.setFirstname(randomAlphabaticStrings().toUpperCase());
+		rp.setLastname(randomAlphabaticStrings().toUpperCase());
+		rp.setEmail(randomAlphabaticStrings()+"@gmail.com");
+		rp.setTelephone(randomNumaricStrings());
+		String password=randomAlphaNumaricStrings();
+		rp.setPassword(password);
+		rp.setConfirmPassword(password);
+		rp.setAgree();
+		rp.continueb();
+		
+		if(rp.getmessage().equals("Your Account Has Been Created!"))
+		{
+	//Assert.assertEquals(rp.getmessage(), "Your Account Has Been Created!");
+			Assert.assertTrue(true);
+			logger.info("Registered Account");
+		}
+		else {
+			logger.error("Test Failed");
+			logger.debug("Debug logs");	
+			logger.info("Account  Not created");
+			Assert.fail();
+		}
+			
+		}
+		catch(Exception e)
+		{
+			logger.error("Test Failed");
+			logger.debug("Debug logs");	
+			logger.info("Account  Not created");
+			Assert.fail();
+		}
+		
+		logger.info("**Registration Test Completed**");
+}
+}
