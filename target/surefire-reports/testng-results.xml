@@ -1,23 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-25T19:50:54 IST" name="Suite" finished-at="2024-10-25T19:51:03 IST" duration-ms="8449">
+  <suite started-at="2024-10-28T20:04:46 IST" name="Suite" finished-at="2024-10-28T20:04:49 IST" duration-ms="3008">
     <groups>
-      <group name="Master">
-        <method signature="AccountRegistrationTest.AccountRegister()[pri:0, instance:testCases.AccountRegistrationTest@4aa83f4f]" name="AccountRegister" class="testCases.AccountRegistrationTest"/>
-        <method signature="LoginTest.logintest()[pri:0, instance:testCases.LoginTest@71cf1b07]" name="logintest" class="testCases.LoginTest"/>
-      </group> <!-- Master -->
-      <group name="Sanity">
-        <method signature="LoginTest.logintest()[pri:0, instance:testCases.LoginTest@71cf1b07]" name="logintest" class="testCases.LoginTest"/>
-      </group> <!-- Sanity -->
-      <group name="Regression">
-        <method signature="AccountRegistrationTest.AccountRegister()[pri:0, instance:testCases.AccountRegistrationTest@4aa83f4f]" name="AccountRegister" class="testCases.AccountRegistrationTest"/>
-      </group> <!-- Regression -->
     </groups>
-    <test started-at="2024-10-25T19:50:54 IST" name="Chrome" finished-at="2024-10-25T19:51:03 IST" duration-ms="8449">
-      <class name="testCases.LoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginTest@71cf1b07]" started-at="2024-10-25T19:50:54 IST" name="setup" finished-at="2024-10-25T19:50:58 IST" duration-ms="3202" status="PASS">
+    <test started-at="2024-10-28T20:04:46 IST" name="Chrome" finished-at="2024-10-28T20:04:49 IST" duration-ms="3008">
+      <class name="testCases.SearchProduct">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.SearchProduct@1d131e1b]" started-at="2024-10-28T20:04:46 IST" name="setup" finished-at="2024-10-28T20:04:49 IST" duration-ms="2260" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,41 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="logintest()[pri:0, instance:testCases.LoginTest@71cf1b07]" started-at="2024-10-25T19:50:58 IST" name="logintest" finished-at="2024-10-25T19:50:59 IST" duration-ms="1265" status="PASS">
+        <test-method signature="searchTest()[pri:0, instance:testCases.SearchProduct@1d131e1b]" started-at="2024-10-28T20:04:49 IST" name="searchTest" finished-at="2024-10-28T20:04:49 IST" duration-ms="431" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- logintest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.LoginTest@71cf1b07]" started-at="2024-10-25T19:50:59 IST" name="teardown" finished-at="2024-10-25T19:50:59 IST" duration-ms="115" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- teardown -->
-      </class> <!-- testCases.LoginTest -->
-      <class name="testCases.AccountRegistrationTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.AccountRegistrationTest@4aa83f4f]" started-at="2024-10-25T19:50:59 IST" name="setup" finished-at="2024-10-25T19:51:01 IST" duration-ms="1843" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[Windows]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setup -->
-        <test-method signature="AccountRegister()[pri:0, instance:testCases.AccountRegistrationTest@4aa83f4f]" started-at="2024-10-25T19:51:01 IST" name="AccountRegister" finished-at="2024-10-25T19:51:02 IST" duration-ms="1676" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- AccountRegister -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.AccountRegistrationTest@4aa83f4f]" started-at="2024-10-25T19:51:02 IST" name="teardown" finished-at="2024-10-25T19:51:03 IST" duration-ms="152" status="PASS">
+        </test-method> <!-- searchTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.SearchProduct@1d131e1b]" started-at="2024-10-28T20:04:49 IST" name="teardown" finished-at="2024-10-28T20:04:49 IST" duration-ms="151" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testCases.AccountRegistrationTest -->
+      </class> <!-- testCases.SearchProduct -->
     </test> <!-- Chrome -->
   </suite> <!-- Suite -->
 </testng-results>

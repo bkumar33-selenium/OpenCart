@@ -19,7 +19,7 @@
              <version>3.5.1</version>
                 <configuration>
                   <suiteXmlFiles>
-                    <suiteXmlFile>NormalTesting.xml</suiteXmlFile>
+                    <suiteXmlFile>search.xml</suiteXmlFile>
                   </suiteXmlFiles>
                 </configuration>
             </plugin>
