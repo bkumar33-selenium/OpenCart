@@ -19,18 +19,25 @@ public class SearchProduct extends BaseClass {
 		hp.cl_search();
 		logger.info("Clicked Search button");
 		SearchPage sp=new SearchPage(driver);
-		boolean ex=sp.isProductExist("MacBoo");
+		boolean ex=sp.isProductExist("MacBook");
 		if(ex==true)
 		{
 			Assert.assertTrue(true);
 			logger.info("Product exist");
+			sp.AddToCart();
+			logger.info("Clicked Add to Cart");
+			System.out.println(sp.getSuccessmessage());
+			sp.clickItemsAddedtoCart();
+			logger.info("Clicked Items Added list");
+			System.out.println("Totat Amount to be paid:-" +sp.getTotalAmnttoPaid());
+			
 		}
 		else
 		{
 		Assert.assertTrue(false);
 		logger.info("Product does not exist");
 		}
-		logger.info("Searching Finished");
+		logger.info("Task Finished");
 		}
 		catch(Exception e)
 		{
