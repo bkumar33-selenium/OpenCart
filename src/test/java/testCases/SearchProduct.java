@@ -19,7 +19,7 @@ public class SearchProduct extends BaseClass {
 		hp.cl_search();
 		logger.info("Clicked Search button");
 		SearchPage sp=new SearchPage(driver);
-		boolean ex=sp.isProductExist("MacBook");
+		boolean ex=sp.isProductExist("MacBoo");
 		if(ex==true)
 		{
 			Assert.assertTrue(true);
