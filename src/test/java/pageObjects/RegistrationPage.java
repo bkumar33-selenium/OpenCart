@@ -18,8 +18,10 @@ public class RegistrationPage extends BasePage {
 	@FindBy(xpath="//input[@id='input-password']") WebElement pwd;	
     @FindBy(xpath="//input[@id='input-confirm']") WebElement confp;
     @FindBy(xpath="//input[@name='agree']") WebElement agre;
+    @FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']") WebElement warn;
     @FindBy(xpath="//input[@value='Continue']") WebElement contn;
     @FindBy(xpath="//h1[normalize-space()='Your Account Has Been Created!']") public WebElement content;
+    
 	public void setFirstname(String name)
 	{
 		fname.sendKeys(name);
@@ -47,6 +49,11 @@ public class RegistrationPage extends BasePage {
 	public void setAgree()
 	{
 		agre.click();
+	}
+	public String getWarningMesg()
+	{
+		String wm=warn.getText();
+		return wm;
 	}
 	public void continueb()
 	{

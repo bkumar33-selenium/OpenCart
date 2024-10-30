@@ -33,7 +33,7 @@ public class AccountRegistrationTest extends BaseClass {
 		String password=randomAlphaNumaricStrings();
 		rp.setPassword(password);
 		rp.setConfirmPassword(password);
-		rp.setAgree();
+		//rp.setAgree();
 		rp.continueb();
 		
 		if(rp.getmessage().equals("Your Account Has Been Created!"))
@@ -44,9 +44,11 @@ public class AccountRegistrationTest extends BaseClass {
 		}
 		else {
 			logger.error("Test Failed");
+			System.out.println(rp.getWarningMesg());
 			logger.debug("Debug logs");	
 			logger.info("Account  Not created");
-			Assert.fail();
+			logger.info("**Registration Test Not Completed**");
+			Assert.assertTrue(false);;
 		}
 			
 		}
