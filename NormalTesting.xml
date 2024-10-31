@@ -8,8 +8,9 @@
   <parameter name="os" value="Windows"/>
   <parameter name="Browser" value="Chrome"/> 
      <classes>
+     <class name="testCases.LoginPageHeaders"/>
    <!--  <class name="testCases.LoginTest"/>-->
-    <class name="testCases.AccountRegistrationTest"/>
+   <!-- <class name="testCases.AccountRegistrationTest"/>-->
 <!--    <class name="testCases.DataDriverLoginData"/> -->
     
     </classes>
