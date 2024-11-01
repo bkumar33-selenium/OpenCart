@@ -10,7 +10,8 @@ public class MainPageHeaders extends BasePage {
 	{
 		super(driver);
 	}
-	@FindBy(xpath="//a[normalize-space()='Desktops']") WebElement desk;
+	@FindBy(xpath="//a[normalize-space()='Desktops']") public WebElement desk;
+	@FindBy(xpath="//a[normalize-space()='Mac (1)']") WebElement mac;
 	@FindBy(xpath="//a[normalize-space()='Laptops & Notebooks']") WebElement lap;
 	@FindBy(xpath="//a[normalize-space()='Components']") WebElement com;
 	@FindBy(xpath="//a[normalize-space()='Tablets']") WebElement tab;
@@ -18,6 +19,15 @@ public class MainPageHeaders extends BasePage {
 	@FindBy(xpath="//a[normalize-space()='Phones & PDAs']") WebElement phn;
 	@FindBy(xpath="//a[normalize-space()='Cameras']") WebElement camr;
 	@FindBy(xpath="//a[normalize-space()='MP3 Players']")WebElement mp3;
+	
+	public WebElement d()
+	{
+		return desk;
+	}
+	public WebElement m()
+	{
+		return mac;
+	}
 	
 	public boolean Desktops()
 	{

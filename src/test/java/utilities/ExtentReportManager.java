@@ -68,6 +68,15 @@ public class ExtentReportManager implements ITestListener {
 		 test=extent.createTest(result.getTestClass().getName());
 		 test.assignCategory(result.getMethod().getGroups());
 		 test.log(Status.PASS,result.getName()+"got succesfully excecuted");
+		/* try {
+				// BaseClass bs=new BaseClass();
+				 String imgpath1=new BaseClass().captureScreenShot(result.getName());
+				 test.addScreenCaptureFromPath(imgpath1);
+			 }
+			 catch(IOException e)
+			 {
+				 e.printStackTrace();
+			 }*/
 	 }
 	 public void onTestFailure(ITestResult result)
 	 {
