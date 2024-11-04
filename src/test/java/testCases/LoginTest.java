@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
 import pageObjects.MyAccountPage;
+import pageObjects.RegistrationPage;
 import testBase.BaseClass;
 
 public class LoginTest extends BaseClass  {
@@ -18,8 +19,23 @@ public class LoginTest extends BaseClass  {
 		HomePage hp=new HomePage(driver);
 		hp.MyAccount();
 		logger.info("Clicked MyAccount link");
-		hp.Login();
-		logger.info("Clicked Login Page");
+		String lpg=p.getProperty("loginpage");
+		System.out.println(lpg);
+		if(lpg.equalsIgnoreCase("RegistrationPageLogin"))
+		{
+		
+		    hp.Registration();
+		    RegistrationPage rp=new RegistrationPage(driver);
+		    rp.RegPLogin();
+		    logger.info("Clicked on Login Page from Registration Page");
+		}
+		
+		else if(lpg.equalsIgnoreCase("LoginPage"))
+		
+		{
+			hp.Login();
+			logger.info("Clicked on Login Page");
+		}
 		LoginPage lp=new LoginPage(driver);
 		logger.info("Providing Customer Details");
 		lp.email(p.getProperty("email"));

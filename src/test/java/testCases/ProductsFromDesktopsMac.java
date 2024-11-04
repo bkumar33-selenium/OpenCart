@@ -5,7 +5,6 @@ import java.io.File;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 
@@ -38,6 +37,7 @@ MainPageHeaders m=new MainPageHeaders(driver);
     Actions a= new Actions(driver);
     a.moveToElement(desk).moveToElement(mac).click().build().perform();
     logger.info("Products Displayed succesfully");
+    Thread.sleep(3000);
     TakesScreenshot sc=(TakesScreenshot)driver;
     File sourcepath=sc.getScreenshotAs(OutputType.FILE);
     File targetpath=new File(System.getProperty("user.dir")+"\\screenshots\\MacProducts.png ");
