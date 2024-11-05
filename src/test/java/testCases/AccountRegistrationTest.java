@@ -44,11 +44,11 @@ public class AccountRegistrationTest extends BaseClass {
 		}
 		else {
 			logger.error("Test Failed");
-			System.out.println(rp.getWarningMesg());
+			System.out.println("Please read the message and do needfull to register the page"+rp.getWarningMesg());
 			logger.debug("Debug logs");	
 			logger.info("Account  Not created");
 			logger.info("**Registration Test Not Completed**");
-			Assert.assertTrue(false);;
+			Assert.assertTrue(false);
 		}
 			
 		}
