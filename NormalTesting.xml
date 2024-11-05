@@ -10,8 +10,8 @@
      <classes>
    <!--  <class name="testCases.ProductsFromDesktopsMac"/>-->
    <!--  <class name="testCases.LoginPageHeaders"/> -->
-    <class name="testCases.LoginTest"/>
-   <!-- <class name="testCases.AccountRegistrationTest"/>-->
+  <!--  <class name="testCases.LoginTest"/>-->
+    <class name="testCases.AccountRegistrationTest"/>
 <!--    <class name="testCases.DataDriverLoginData"/> -->
     
     </classes>
