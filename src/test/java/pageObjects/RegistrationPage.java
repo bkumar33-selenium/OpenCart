@@ -11,6 +11,7 @@ public class RegistrationPage extends BasePage {
 	{
 		super(driver);
 	}
+	@FindBy(xpath="//a[normalize-space()='login page']") WebElement rlgin;
 	@FindBy(xpath="//input[@id='input-firstname']") WebElement fname;
 	@FindBy(xpath="//input[@id='input-lastname']") WebElement lname;
 	@FindBy(xpath="//input[@id='input-email']") WebElement email;
@@ -21,6 +22,7 @@ public class RegistrationPage extends BasePage {
     @FindBy(xpath="//div[@class='alert alert-danger alert-dismissible']") WebElement warn;
     @FindBy(xpath="//input[@value='Continue']") WebElement contn;
     @FindBy(xpath="//h1[normalize-space()='Your Account Has Been Created!']") public WebElement content;
+    
     
 	public void setFirstname(String name)
 	{
@@ -59,6 +61,11 @@ public class RegistrationPage extends BasePage {
 	{
 		contn.click();
 	}
+	public void RegPLogin()
+	{
+		rlgin.click();
+	}
+	
 	public String getmessage()
 	{
 		try {
