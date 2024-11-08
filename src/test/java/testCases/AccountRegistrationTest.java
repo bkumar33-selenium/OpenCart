@@ -31,9 +31,11 @@ public class AccountRegistrationTest extends BaseClass {
 		rp.setEmail(randomAlphabaticStrings()+"@gmail.com");
 		rp.setTelephone(randomNumaricStrings());
 		String password=randomAlphaNumaricStrings();
+	    System.out.println(password);
 		rp.setPassword(password);
 		rp.setConfirmPassword(password);
-		//rp.setAgree();
+		rp.setAgree();
+		Thread.sleep(5000);
 		rp.continueb();
 		
 		if(rp.getmessage().equals("Your Account Has Been Created!"))
