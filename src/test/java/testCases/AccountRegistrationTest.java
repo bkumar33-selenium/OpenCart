@@ -28,12 +28,16 @@ public class AccountRegistrationTest extends BaseClass {
 		logger.info("Providing Customer Details");
 		rp.setFirstname(randomAlphabaticStrings().toUpperCase());
 		rp.setLastname(randomAlphabaticStrings().toUpperCase());
-		rp.setEmail(randomAlphabaticStrings()+"@gmail.com");
+		String email=randomAlphabaticStrings()+"@gmail.com";
+		System.out.println(email);
+		rp.setEmail(email);
 		rp.setTelephone(randomNumaricStrings());
 		String password=randomAlphaNumaricStrings();
+	    System.out.println(password);
 		rp.setPassword(password);
 		rp.setConfirmPassword(password);
-		//rp.setAgree();
+		rp.setAgree();
+		Thread.sleep(5000);
 		rp.continueb();
 		
 		if(rp.getmessage().equals("Your Account Has Been Created!"))
@@ -44,11 +48,11 @@ public class AccountRegistrationTest extends BaseClass {
 		}
 		else {
 			logger.error("Test Failed");
-			System.out.println(rp.getWarningMesg());
+			System.out.println("Please read the message and do needfull to register the page"+rp.getWarningMesg());
 			logger.debug("Debug logs");	
 			logger.info("Account  Not created");
 			logger.info("**Registration Test Not Completed**");
-			Assert.assertTrue(false);;
+			Assert.assertTrue(false);
 		}
 			
 		}

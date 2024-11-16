@@ -8,13 +8,13 @@
     <parameter name="os" value="Windows"/>
     <parameter name="Browser" value="Chrome"/>
     <classes>
-      <class name="testCases.LoginTest">
+      <class name="testCases.RightSideMC_Confirmation">
         <methods>
           <include name="teardown"/>
-          <include name="logintest"/>
+          <include name="edm"/>
           <include name="setup"/>
         </methods>
-      </class> <!-- testCases.LoginTest -->
+      </class> <!-- testCases.RightSideMC_Confirmation -->
     </classes>
   </test> <!-- Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->
