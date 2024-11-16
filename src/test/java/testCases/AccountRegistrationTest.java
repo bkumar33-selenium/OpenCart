@@ -28,7 +28,9 @@ public class AccountRegistrationTest extends BaseClass {
 		logger.info("Providing Customer Details");
 		rp.setFirstname(randomAlphabaticStrings().toUpperCase());
 		rp.setLastname(randomAlphabaticStrings().toUpperCase());
-		rp.setEmail(randomAlphabaticStrings()+"@gmail.com");
+		String email=randomAlphabaticStrings()+"@gmail.com";
+		System.out.println(email);
+		rp.setEmail(email);
 		rp.setTelephone(randomNumaricStrings());
 		String password=randomAlphaNumaricStrings();
 	    System.out.println(password);
