@@ -1,14 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 29.49 s <<< FAILURE! -- in TestSuite
-testCases.AccountRegistrationTest.AccountRegister -- Time elapsed: 22.50 s <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
+Tests run: 1, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 25.85 s <<< FAILURE! -- in TestSuite
+testCases.RightSideMC_Confirmation.edm -- Time elapsed: 21.14 s <<< FAILURE!
+java.lang.AssertionError: null
 	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at testCases.AccountRegistrationTest.AccountRegister(AccountRegistrationTest.java:51)
+	at org.testng.Assert.fail(Assert.java:116)
+	at testCases.RightSideMC_Confirmation.edm(RightSideMC_Confirmation.java:75)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)

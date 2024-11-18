@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-11-16T20:24:52 IST" name="Suite" finished-at="2024-11-16T20:24:56 IST" duration-ms="3927">
+  <suite started-at="2024-11-18T20:09:58 IST" name="Suite" finished-at="2024-11-18T20:10:05 IST" duration-ms="6545">
     <groups>
     </groups>
-    <test started-at="2024-11-16T20:24:52 IST" name="Chrome" finished-at="2024-11-16T20:24:56 IST" duration-ms="3927">
+    <test started-at="2024-11-18T20:09:58 IST" name="Chrome" finished-at="2024-11-18T20:10:05 IST" duration-ms="6545">
       <class name="testCases.RightSideMC_Confirmation">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.RightSideMC_Confirmation@4bd1f8dd]" started-at="2024-11-16T20:24:52 IST" name="setup" finished-at="2024-11-16T20:24:54 IST" duration-ms="2094" status="PASS">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.RightSideMC_Confirmation@4bd1f8dd]" started-at="2024-11-18T20:09:58 IST" name="setup" finished-at="2024-11-18T20:10:01 IST" duration-ms="2206" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +23,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="edm()[pri:0, instance:testCases.RightSideMC_Confirmation@4bd1f8dd]" started-at="2024-11-16T20:24:54 IST" name="edm" finished-at="2024-11-16T20:24:56 IST" duration-ms="1469" status="PASS">
+        <test-method signature="edm()[pri:0, instance:testCases.RightSideMC_Confirmation@4bd1f8dd]" started-at="2024-11-18T20:10:01 IST" name="edm" finished-at="2024-11-18T20:10:05 IST" duration-ms="3980" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- edm -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.RightSideMC_Confirmation@4bd1f8dd]" started-at="2024-11-16T20:24:56 IST" name="teardown" finished-at="2024-11-16T20:24:56 IST" duration-ms="162" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.RightSideMC_Confirmation@4bd1f8dd]" started-at="2024-11-18T20:10:05 IST" name="teardown" finished-at="2024-11-18T20:10:05 IST" duration-ms="174" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
