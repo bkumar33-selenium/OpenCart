@@ -17,6 +17,7 @@ public class LoginPage extends BasePage{
 	@FindBy(xpath="//input[@id='input-password']") WebElement pwd;
 	@FindBy(xpath="//input[@id='input-confirm']") WebElement cpwd;
 	@FindBy(xpath="//input[@value='Continue']") WebElement cont;
+	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement sucmsg;
 	public void email(String eml)
 	{
 		email.sendKeys(eml);
@@ -41,9 +42,11 @@ public class LoginPage extends BasePage{
 	{
 		cpwd.sendKeys(clpwd);
 	}
-	public void continu()
+	public String continu()
 	{
 		cont.click();
+		String sm=sucmsg.getText();
+		return sm;
 	}
 
 }

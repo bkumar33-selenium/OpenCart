@@ -13,12 +13,40 @@ public class MainPageHeaders extends BasePage {
 	@FindBy(xpath="//a[normalize-space()='Desktops']") public WebElement desk;
 	@FindBy(xpath="//a[normalize-space()='Mac (1)']") WebElement mac;
 	@FindBy(xpath="//a[normalize-space()='Laptops & Notebooks']") WebElement lap;
-	@FindBy(xpath="//a[normalize-space()='Components']") WebElement com;
+	@FindBy(xpath="//a[normalize-space()='Components']") public WebElement com;
 	@FindBy(xpath="//a[normalize-space()='Tablets']") WebElement tab;
 	@FindBy(xpath="//a[normalize-space()='Software']") WebElement soft;
 	@FindBy(xpath="//a[normalize-space()='Phones & PDAs']") WebElement phn;
 	@FindBy(xpath="//a[normalize-space()='Cameras']") WebElement camr;
 	@FindBy(xpath="//a[normalize-space()='MP3 Players']")WebElement mp3;
+	
+	
+	//Components Elements
+	@FindBy(xpath="//a[normalize-space()='Monitors (2)']") WebElement Mon;
+	//@FindBy(xpath="//a[normalize-space()='Apple Cinema 30']") WebElement Monname1;
+	@FindBy(xpath="//body[1]/div[2]/div[1]/div[1]/div[3]/div[1]/div[1]/div[2]/div[1]/h4[1]") WebElement wnm2;
+	@FindBy(xpath="//a[normalize-space()='Samsung SyncMaster 941BW']") WebElement wnm1;
+	
+	//It returns monitor names from Components list
+	public String[] MonitorNames()
+	{
+		String mn1,mn2;
+		mn1=wnm1.getText();
+		mn2=wnm2.getText();
+		String a[]= {mn1,mn2};
+		
+		return a;
+	}
+	//It returns Component label
+	public String displayComponent()
+	{
+		String dis=com.getText();
+		return dis;
+	}
+	public void moniters()
+	{
+		Mon.click();
+	}
 	
 	public WebElement d()
 	{
