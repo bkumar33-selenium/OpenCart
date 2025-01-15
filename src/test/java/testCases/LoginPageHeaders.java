@@ -15,7 +15,9 @@ public class LoginPageHeaders extends BaseClass {
 	{
 		logger.info("------Validation starts-------");
 		HomePage h=new HomePage(driver);
+		
 		h.MyAccount();
+		Thread.sleep(5000);
 		h.Login();
 		logger.info("Clicked Login Page");
 		

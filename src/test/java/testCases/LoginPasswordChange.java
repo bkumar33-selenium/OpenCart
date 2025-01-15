@@ -48,8 +48,9 @@ public class LoginPasswordChange extends BaseClass {
 	    //System.out.println(password);
 		lp.Lpwd_change("T123pc1");
 		lp.cLpwd_change("T123pc1");
-		lp.continu();
+		System.out.println(lp.continu());
 		logger.info("Password Changed succesfully");
+		
 		}
 		catch(Exception e)
 		{

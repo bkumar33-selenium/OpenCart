@@ -1,5 +1,7 @@
 package testCases;
 
+import javax.sound.midi.SysexMessage;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -43,8 +45,33 @@ public class RightSideMC_Confirmation extends BaseClass{
 		lp.login();
 		logger.info("Logged in Succesfully");
 		RightSideMenuChecking rsmc=new RightSideMenuChecking(driver);
-		String mesg=rsmc.editaccount();
+		String mesg=rsmc.MyAccount();
 		System.out.println(mesg);
+	    String mesg0=rsmc.editaccount();
+		System.out.println(mesg0);
+		String mesg2=rsmc.Password();
+		System.out.println(mesg2);
+		String mesg3=rsmc.AddressBook();
+		System.out.println(mesg3);
+		String mesg4=rsmc.WishList();
+		System.out.println(mesg4);
+		String mesg5=rsmc.OrderHistory();
+		System.out.println(mesg5);
+		String mesg6=rsmc.Downloads();
+		System.out.println(mesg6);
+		String mesg7=rsmc.Recurringpayments();
+		System.out.println(mesg7);
+		String mesg8=rsmc.RewardPoints();
+		System.out.println(mesg8);
+		String mesg9=rsmc.Returns();
+		System.out.println(mesg9);
+		String mesg10=rsmc.Transaction();
+		System.out.println(mesg10);
+		String mesg11=rsmc.Newsletter();
+		System.out.println(mesg11);	
+		String mesg12=rsmc.Logout();
+		System.out.println(mesg12);
+		
 		logger.info(" Edit Account verification completed");
 		}
 		catch(Exception e)
