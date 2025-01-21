@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.UI_Currency">
+      <class name="testCases.Edit_Account">
         <methods>
           <include name="teardown"/>
-          <include name="Cur"/>
           <include name="setup"/>
+          <include name="edit"/>
         </methods>
-      </class> <!-- testCases.UI_Currency -->
+      </class> <!-- testCases.Edit_Account -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
