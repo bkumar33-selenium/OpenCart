@@ -16,8 +16,13 @@ public class EditAccount_Obj extends BasePage{
 	@FindBy(xpath="//input[@name='lastname']") WebElement lnm;
 	@FindBy(xpath="//input[@name='email']") WebElement eml;
 	@FindBy(xpath="//input[@name='telephone']") WebElement tel;
+	//continue button
 	@FindBy(xpath="//input[@value='Continue']") WebElement cont;
 	@FindBy(xpath="//div[@class='alert alert-success alert-dismissible']") WebElement suc;
+	
+	//Back button
+	@FindBy(xpath="//div[@class='pull-left']//a") WebElement bck;
+	
 
 	
 	public void edit_account()
@@ -48,6 +53,10 @@ public class EditAccount_Obj extends BasePage{
 	{
 		
 		cont.click();
+	}
+	public void Back()
+	{
+		bck.click();
 	}
 	public String Get_success_msg()
 	{

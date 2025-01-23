@@ -2,12 +2,12 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-21T17:59:16 IST" name="Suite" finished-at="2025-01-21T17:59:29 IST" duration-ms="13129">
+  <suite started-at="2025-01-23T21:10:50 IST" name="Suite" finished-at="2025-01-23T21:11:09 IST" duration-ms="18333">
     <groups>
     </groups>
-    <test started-at="2025-01-21T17:59:16 IST" name="Chrome" finished-at="2025-01-21T17:59:29 IST" duration-ms="13129">
-      <class name="testCases.Edit_Account">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.Edit_Account@3e14c16d]" started-at="2025-01-21T17:59:16 IST" name="setup" finished-at="2025-01-21T17:59:18 IST" duration-ms="2331" status="PASS">
+    <test started-at="2025-01-23T21:10:50 IST" name="Chrome" finished-at="2025-01-23T21:11:09 IST" duration-ms="18333">
+      <class name="testCases.Edit_Account_Back_button">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.Edit_Account_Back_button@3e14c16d]" started-at="2025-01-23T21:10:51 IST" name="setup" finished-at="2025-01-23T21:10:53 IST" duration-ms="2138" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,19 +23,19 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getMoniter()[pri:0, instance:testCases.Edit_Account@3e14c16d]" started-at="2025-01-21T17:59:18 IST" name="getMoniter" finished-at="2025-01-21T17:59:23 IST" duration-ms="4222" status="PASS">
+        <test-method signature="getMoniter()[pri:0, instance:testCases.Edit_Account_Back_button@3e14c16d]" started-at="2025-01-23T21:10:53 IST" name="getMoniter" finished-at="2025-01-23T21:10:57 IST" duration-ms="4385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getMoniter -->
-        <test-method signature="edit()[pri:0, instance:testCases.Edit_Account@3e14c16d]" started-at="2025-01-21T17:59:23 IST" name="edit" finished-at="2025-01-21T17:59:27 IST" duration-ms="4674" status="PASS">
+        <test-method signature="bckbutton()[pri:0, instance:testCases.Edit_Account_Back_button@3e14c16d]" started-at="2025-01-23T21:10:57 IST" name="bckbutton" finished-at="2025-01-23T21:11:09 IST" duration-ms="11428" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- edit -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.Edit_Account@3e14c16d]" started-at="2025-01-21T17:59:27 IST" name="teardown" finished-at="2025-01-21T17:59:29 IST" duration-ms="1700" status="PASS">
+        </test-method> <!-- bckbutton -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.Edit_Account_Back_button@3e14c16d]" started-at="2025-01-23T21:11:09 IST" name="teardown" finished-at="2025-01-23T21:11:09 IST" duration-ms="203" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testCases.Edit_Account -->
+      </class> <!-- testCases.Edit_Account_Back_button -->
     </test> <!-- Chrome -->
   </suite> <!-- Suite -->
 </testng-results>
