@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-01-23T21:10:50 IST" name="Suite" finished-at="2025-01-23T21:11:09 IST" duration-ms="18333">
+  <suite started-at="2025-01-27T15:45:26 IST" name="Suite" finished-at="2025-01-27T15:45:33 IST" duration-ms="7169">
     <groups>
     </groups>
-    <test started-at="2025-01-23T21:10:50 IST" name="Chrome" finished-at="2025-01-23T21:11:09 IST" duration-ms="18333">
-      <class name="testCases.Edit_Account_Back_button">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.Edit_Account_Back_button@3e14c16d]" started-at="2025-01-23T21:10:51 IST" name="setup" finished-at="2025-01-23T21:10:53 IST" duration-ms="2138" status="PASS">
+    <test started-at="2025-01-27T15:45:26 IST" name="Chrome" finished-at="2025-01-27T15:45:33 IST" duration-ms="7169">
+      <class name="testCases.LoginPasswordChange">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testCases.LoginPasswordChange@4bd1f8dd]" started-at="2025-01-27T15:45:26 IST" name="setup" finished-at="2025-01-27T15:45:28 IST" duration-ms="2188" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,19 +23,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="getMoniter()[pri:0, instance:testCases.Edit_Account_Back_button@3e14c16d]" started-at="2025-01-23T21:10:53 IST" name="getMoniter" finished-at="2025-01-23T21:10:57 IST" duration-ms="4385" status="PASS">
+        <test-method signature="loginPasswordchng()[pri:0, instance:testCases.LoginPasswordChange@4bd1f8dd]" started-at="2025-01-27T15:45:28 IST" name="loginPasswordchng" finished-at="2025-01-27T15:45:33 IST" duration-ms="4584" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- getMoniter -->
-        <test-method signature="bckbutton()[pri:0, instance:testCases.Edit_Account_Back_button@3e14c16d]" started-at="2025-01-23T21:10:57 IST" name="bckbutton" finished-at="2025-01-23T21:11:09 IST" duration-ms="11428" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- bckbutton -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.Edit_Account_Back_button@3e14c16d]" started-at="2025-01-23T21:11:09 IST" name="teardown" finished-at="2025-01-23T21:11:09 IST" duration-ms="203" status="PASS">
+        </test-method> <!-- loginPasswordchng -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:testCases.LoginPasswordChange@4bd1f8dd]" started-at="2025-01-27T15:45:33 IST" name="teardown" finished-at="2025-01-27T15:45:33 IST" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- testCases.Edit_Account_Back_button -->
+      </class> <!-- testCases.LoginPasswordChange -->
     </test> <!-- Chrome -->
   </suite> <!-- Suite -->
 </testng-results>

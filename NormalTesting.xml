@@ -17,11 +17,11 @@
 <!--<class name="testCases.RightSideMC_Confirmation"/>  -->
 <!--<class name="testCases.Edit_Account"/>-->
 
-<class name="testCases.Edit_Account_Back_button"/>
+<!--<class name="testCases.Edit_Account_Back_button"/>-->
 
  
 <!--    <class name="testCases.DataDriverLoginData"/> -->
-     <!--    <class name="testCases.LoginPasswordChange"/>-->
+        <class name="testCases.LoginPasswordChange"/>
     
     </classes>
   </test> <!-- Test -->

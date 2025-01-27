@@ -42,9 +42,12 @@ public class LoginPage extends BasePage{
 	{
 		cpwd.sendKeys(clpwd);
 	}
-	public String continu()
+	public void ClickContinue()
 	{
 		cont.click();
+	}
+	public String completedMessage()
+	{
 		String sm=sucmsg.getText();
 		return sm;
 	}

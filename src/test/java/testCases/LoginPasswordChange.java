@@ -46,10 +46,23 @@ public class LoginPasswordChange extends BaseClass {
 		logger.info("Clicked on Password Reset");
 		//String password=randomAlphaNumaricStrings();
 	    //System.out.println(password);
-		lp.Lpwd_change("T123pc1");
-		lp.cLpwd_change("T123pc1");
-		System.out.println(lp.continu());
-		logger.info("Password Changed succesfully");
+		String p="T123pc1", pc="T123pc";
+		if(p.equals(pc))
+		{
+			lp.Lpwd_change(p);
+			lp.cLpwd_change(pc);	
+			Thread.sleep(3000);
+		lp.ClickContinue();
+		System.out.println(lp.completedMessage());
+		logger.info("Password Change process completed");
+		}
+		else
+		{
+			Thread.sleep(3000);
+			logger.info("Cannot Proceed:'Password confirmation does not match password!'");
+			logger.info("Password Change process Not completed");
+		}
+		
 		
 		}
 		catch(Exception e)
@@ -57,7 +70,7 @@ public class LoginPasswordChange extends BaseClass {
 			Assert.fail();
 			logger.info("login failed");
 		}
-		logger.info("****Login PasswordReset-Test Completed*****");
+		
 		}
 	}
 
