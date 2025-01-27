@@ -46,7 +46,7 @@ public class LoginPasswordChange extends BaseClass {
 		logger.info("Clicked on Password Reset");
 		//String password=randomAlphaNumaricStrings();
 	    //System.out.println(password);
-		String p="T123pc1", pc="T123pc";
+		String p="T123pc1", pc="T123pc1";
 		if(p.equals(pc))
 		{
 			lp.Lpwd_change(p);
