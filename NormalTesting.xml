@@ -21,7 +21,8 @@
 
  
 <!--    <class name="testCases.DataDriverLoginData"/> -->
-        <class name="testCases.LoginPasswordChange"/>
+  <!--      <class name="testCases.LoginPasswordChange"/>-->
+  <class name="testCases.ShoppingCart"/>
     
     </classes>
   </test> <!-- Test -->
