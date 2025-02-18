@@ -8,13 +8,13 @@
     <parameter name="os" value="Windows"/>
     <parameter name="Browser" value="Chrome"/>
     <classes>
-      <class name="testCases.LoginPasswordChange">
+      <class name="testCases.SlideShowProducts">
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="loginPasswordchng"/>
+          <include name="SlidShowPr"/>
         </methods>
-      </class> <!-- testCases.LoginPasswordChange -->
+      </class> <!-- testCases.SlideShowProducts -->
     </classes>
   </test> <!-- Chrome(failed) -->
 </suite> <!-- Failed suite [Suite] -->

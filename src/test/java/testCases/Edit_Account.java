@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 import pageObjects.EditAccount_Obj;
 import pageObjects.HomePage;
 import pageObjects.LoginPage;
+import pageObjects.RightSideMenuChecking;
 import testBase.BaseClass;
 import testBase.Login;
 
@@ -43,8 +44,8 @@ public class Edit_Account extends Login {
 		ed.Continue();
 		String scm=ed.Get_success_msg();
 		System.out.println(scm);
-		
-		
+		RightSideMenuChecking rsc=new RightSideMenuChecking(driver);
+		System.out.println(rsc.Logout());
 		logger.info("Opened Edit Account page");
 		}
 		catch(Exception e)

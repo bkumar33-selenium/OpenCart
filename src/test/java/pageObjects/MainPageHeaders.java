@@ -78,6 +78,11 @@ public class MainPageHeaders extends BasePage {
 		boolean t=tab.isDisplayed();
 		return t;
 	}
+	//Click on Tablet option
+	public void Tablet()
+	{
+	 	tab.click();
+	}
 	public boolean Software()
 	{
 		boolean s=soft.isDisplayed();

@@ -16,13 +16,16 @@
  <!--  <class name="testCases.AccountRegistrationTest"/>-->
 <!--<class name="testCases.RightSideMC_Confirmation"/>  -->
 <!--<class name="testCases.Edit_Account"/>-->
+<!--<class name="testCases.EndToEndTest_Scenario"/>-->
+<class name="testCases.SlideShowProducts"/>
+
 
 <!--<class name="testCases.Edit_Account_Back_button"/>-->
 
  
 <!--    <class name="testCases.DataDriverLoginData"/> -->
   <!--      <class name="testCases.LoginPasswordChange"/>-->
-  <class name="testCases.ShoppingCart"/>
+ <!-- <class name="testCases.ShoppingCart"/>-->
     
     </classes>
   </test> <!-- Test -->
